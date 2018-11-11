@@ -17,6 +17,7 @@ import java.util.Scanner;
 public class roster {
 ArrayList<StudendList> students = new ArrayList<>();
 ArrayList<display5> Student2 = new ArrayList<>(); 
+String h;
 	public static void main(String[] agrs) throws IOException {
 		roster StudentId = new roster();
 		StudentId.writeTofile("C:\\Users\\catboot\\Desktop\\Csco1301\\Midterm test 2 pp2\\src\\Testfile");
