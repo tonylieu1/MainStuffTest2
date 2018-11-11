@@ -27,8 +27,7 @@ String h;
 		List<String> StudentRead = Files.readAllLines(Paths.get(FileName));
 		while(!StudentRead.isEmpty()) {
 		String Students = StudentRead.remove(0);
-		createStudent(Students);
-			
+		createStudent(Students);	
 		}
 		}
 	public void createStudent(String Students) {
@@ -38,10 +37,6 @@ String h;
 		int SecondNum = ListStudented.nextInt();
 		int ThirdNum = ListStudented.nextInt();
 		StudendList StudentsListArra = new StudendList(Name, FirstNum, SecondNum, ThirdNum);
-		StudentsListArra.setName(Name);
-		StudentsListArra.setFirstNum(FirstNum);
-		StudentsListArra.setSecondNum(SecondNum);
-		StudentsListArra.setThirdNum(ThirdNum);
 		StudentsListArra.CalAvg();
 		Student2.add(new display5(Name, StudentsListArra.CalAvg));
 		students.add(StudentsListArra);
@@ -60,13 +55,10 @@ String h;
 				return 0;
 			}
 			
-			
 		});
 		System.out.println("Top 3 Students");
 		for(int WinningList = 0; WinningList < 3;WinningList++) {
 		System.out.println(WinningList+1 +"." + Student2.get(WinningList).Name + " "+ Student2.get(WinningList).CalAvg);
 		}
 	}
-	
 	}
-
